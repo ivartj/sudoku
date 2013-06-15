@@ -35,7 +35,6 @@ void parseargs(int argc, char *argv[])
 			usage(stdout);
 			exit(EXIT_SUCCESS);
 		case '?':
-			fprintf(stderr, "Unknown option: %s\n", argv[0]);
 			usage(stderr);
 			exit(EXIT_FAILURE);
 		}
