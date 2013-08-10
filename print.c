@@ -28,3 +28,8 @@ void row(io_writer *w, const char nums[9])
 		nums[3], nums[4], nums[5],
 		nums[6], nums[7], nums[8]);
 }
+
+size_t sudoku_fwrite(void *ptr, size_t size, size_t nitems, void *stream)
+{
+	return fwrite(ptr, size, nitems, (FILE *)stream);
+}

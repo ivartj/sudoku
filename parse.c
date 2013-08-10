@@ -41,3 +41,8 @@ sudoku *sudoku_parse(size_t (*read)(void *, size_t, size_t, void *), void *data)
 
 	return pz;
 }
+
+size_t sudoku_fread(void *ptr, size_t size, size_t nitems, void *stream)
+{
+	return fread(ptr, size, nitems, (FILE *)stream);
+}
